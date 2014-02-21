@@ -21,6 +21,8 @@
 		C46572B018B6FB090084D81B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C465729118B6FB090084D81B /* Foundation.framework */; };
 		C46572B818B6FB090084D81B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C46572B618B6FB090084D81B /* InfoPlist.strings */; };
 		C46572BB18B6FB090084D81B /* Test0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C46572BA18B6FB090084D81B /* Test0Tests.m */; };
+		C46572C518B6FB1D0084D81B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46572C418B6FB1D0084D81B /* Main.storyboard */; };
+		C46572C818B6FB440084D81B /* stepperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C46572C718B6FB440084D81B /* stepperViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		C46572B718B6FB090084D81B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C46572B918B6FB090084D81B /* Test0Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test0Tests.h; sourceTree = "<group>"; };
 		C46572BA18B6FB090084D81B /* Test0Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test0Tests.m; sourceTree = "<group>"; };
+		C46572C418B6FB1D0084D81B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C46572C618B6FB440084D81B /* stepperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stepperViewController.h; sourceTree = "<group>"; };
+		C46572C718B6FB440084D81B /* stepperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stepperViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +120,9 @@
 				C465729E18B6FB090084D81B /* AppDelegate.h */,
 				C465729F18B6FB090084D81B /* AppDelegate.m */,
 				C465729618B6FB090084D81B /* Supporting Files */,
+				C46572C418B6FB1D0084D81B /* Main.storyboard */,
+				C46572C618B6FB440084D81B /* stepperViewController.h */,
+				C46572C718B6FB440084D81B /* stepperViewController.m */,
 			);
 			path = Test0;
 			sourceTree = "<group>";
@@ -227,6 +235,7 @@
 				C46572A218B6FB090084D81B /* Default.png in Resources */,
 				C46572A418B6FB090084D81B /* Default@2x.png in Resources */,
 				C46572A618B6FB090084D81B /* Default-568h@2x.png in Resources */,
+				C46572C518B6FB1D0084D81B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +272,7 @@
 			files = (
 				C465729C18B6FB090084D81B /* main.m in Sources */,
 				C46572A018B6FB090084D81B /* AppDelegate.m in Sources */,
+				C46572C818B6FB440084D81B /* stepperViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +445,7 @@
 				C46572C018B6FB090084D81B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C46572C118B6FB090084D81B /* Build configuration list for PBXNativeTarget "Test0Tests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +454,7 @@
 				C46572C318B6FB090084D81B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

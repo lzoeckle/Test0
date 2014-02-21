@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="whX-HD-k42">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Stepper View Controller-->
+        <scene sceneID="fp2-Hp-I3l">
+            <objects>
+                <viewController id="whX-HD-k42" customClass="stepperViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FsD-KT-ybD">
+                        <rect key="frame" x="0.0" y="20" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="EeA-7W-n73">
+                                <connections>
+                                    <action selector="valueChanged:" destination="whX-HD-k42" eventType="valueChanged" id="pED-Ki-JYI"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhX-0l-THZ" userLabel="myLabel">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="rxk-xv-cIl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK1-i3-Z9i" userLabel="timeLabel">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="Xci-TI-q0P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMs-NO-cvX">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addNight:" destination="whX-HD-k42" eventType="touchUpInside" id="XuB-pK-dom"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0.000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsi-xm-NzT">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="OAX-CR-6B9"/>
+                                    <constraint firstAttribute="height" constant="26" id="VU5-wH-fx5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fK1-i3-Z9i" firstAttribute="top" secondItem="FsD-KT-ybD" secondAttribute="top" constant="100" id="5Hl-Mb-nmP"/>
+                            <constraint firstAttribute="bottom" secondItem="yhX-0l-THZ" secondAttribute="bottom" constant="127" id="661-ZM-4BB"/>
+                            <constraint firstItem="GMs-NO-cvX" firstAttribute="leading" secondItem="FsD-KT-ybD" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="66z-iM-QnL"/>
+                            <constraint firstItem="Tsi-xm-NzT" firstAttribute="centerX" secondItem="yhX-0l-THZ" secondAttribute="centerX" type="default" id="Dyu-Ic-DWP"/>
+                            <constraint firstAttribute="bottom" secondItem="EeA-7W-n73" secondAttribute="bottom" constant="43" id="Ich-m6-ICV"/>
+                            <constraint firstItem="Tsi-xm-NzT" firstAttribute="top" secondItem="FsD-KT-ybD" secondAttribute="top" constant="213" id="ME3-6W-T9P"/>
+                            <constraint firstItem="GMs-NO-cvX" firstAttribute="top" secondItem="FsD-KT-ybD" secondAttribute="top" constant="20" symbolic="YES" type="default" id="NL2-CY-98p"/>
+                            <constraint firstItem="yhX-0l-THZ" firstAttribute="centerX" secondItem="EeA-7W-n73" secondAttribute="centerX" type="default" id="NbS-oJ-UTs"/>
+                            <constraint firstItem="fK1-i3-Z9i" firstAttribute="centerX" secondItem="FsD-KT-ybD" secondAttribute="centerX" type="default" id="TTy-Ye-ewz"/>
+                            <constraint firstItem="Tsi-xm-NzT" firstAttribute="centerX" secondItem="fK1-i3-Z9i" secondAttribute="centerX" type="default" id="UhI-zC-hRe"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bacLabel" destination="Tsi-xm-NzT" id="Az2-Fw-6vQ"/>
+                        <outlet property="myLabel" destination="yhX-0l-THZ" id="gSD-Zx-Fbh"/>
+                        <outlet property="timeLabel" destination="fK1-i3-Z9i" id="7bB-54-zVS"/>
+                        <outlet property="view" destination="FsD-KT-ybD" id="SJC-da-l8r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iUb-Pt-Qkl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-182" y="75"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="stepperViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/stepperViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addNight:" candidateClass="UIButton"/>
+                <relationship kind="action" name="valueChanged:" candidateClass="UIStepper"/>
+                <relationship kind="outlet" name="bacLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="myLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="timeLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
