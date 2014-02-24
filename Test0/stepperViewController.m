@@ -14,31 +14,35 @@
 
 @implementation stepperViewController
 
+- (void)startTimer {
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(countUp) userInfo:nil repeats:YES];
+}
+
 - (IBAction)valueChanged:(UIStepper *)sender
 {
     double value = [sender value];
     [myLabel setText:[NSString stringWithFormat:@"%d", (int)value]];
     if (first){
-        first = false;
         mainInt = 0;
-        timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(countUp) userInfo:nil repeats:YES];
+        [self startTimer];
+        first = false;
         float labelVal = [[myLabel text] floatValue];
         [bacLabel setText:[NSString stringWithFormat:@"%f", (((labelVal * 3.084) / 109.5) - (0.15 * (mainInt / 3600)))]];
     } else {
         float labelVal = [[myLabel text] floatValue];
         [bacLabel setText:[NSString stringWithFormat:@"%f", (((labelVal * 3.084) / 109.5) - (0.15 * (mainInt / 3600)))]];
     }
-    
 }
 
 - (IBAction)addNight:(UIButton *)sender
 {
+    first = true;
+    mainInt = 0;
     NSDate *currentTime = [NSDate date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"hh:mm:ss"];
     NSString *time = [dateFormatter stringFromDate: currentTime];
     [timeLabel setText:time];
-    
 }
 
 - (void) countUp {
