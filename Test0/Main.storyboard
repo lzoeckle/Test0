@@ -27,7 +27,7 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK1-i3-Z9i" userLabel="timeLabel">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="Xci-TI-q0P"/>
+                                    <constraint firstAttribute="width" constant="121" id="5ud-Vg-Dif"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -63,8 +63,8 @@
                             <constraint firstItem="Tsi-xm-NzT" firstAttribute="top" secondItem="FsD-KT-ybD" secondAttribute="top" constant="213" id="ME3-6W-T9P"/>
                             <constraint firstItem="GMs-NO-cvX" firstAttribute="top" secondItem="FsD-KT-ybD" secondAttribute="top" constant="20" symbolic="YES" type="default" id="NL2-CY-98p"/>
                             <constraint firstItem="yhX-0l-THZ" firstAttribute="centerX" secondItem="EeA-7W-n73" secondAttribute="centerX" type="default" id="NbS-oJ-UTs"/>
-                            <constraint firstItem="fK1-i3-Z9i" firstAttribute="centerX" secondItem="FsD-KT-ybD" secondAttribute="centerX" type="default" id="TTy-Ye-ewz"/>
-                            <constraint firstItem="Tsi-xm-NzT" firstAttribute="centerX" secondItem="fK1-i3-Z9i" secondAttribute="centerX" type="default" id="UhI-zC-hRe"/>
+                            <constraint firstItem="fK1-i3-Z9i" firstAttribute="centerX" secondItem="FsD-KT-ybD" secondAttribute="centerX" type="default" id="Xt5-lb-1cc"/>
+                            <constraint firstItem="fK1-i3-Z9i" firstAttribute="centerX" secondItem="Tsi-xm-NzT" secondAttribute="centerX" type="default" id="yrF-me-Z2r"/>
                         </constraints>
                     </view>
                     <toolbarItems/>

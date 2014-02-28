@@ -8,11 +8,24 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Test0/stepperViewController.m"
-         timestampString = "414963895.5678"
+         timestampString = "415308852.066298"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "38"
-         endingLineNumber = "38"
+         startingLineNumber = "58"
+         endingLineNumber = "58"
+         landmarkName = "-initWithNibName:bundle:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Test0/stepperViewController.m"
+         timestampString = "415137961.309825"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "45"
+         endingLineNumber = "45"
          landmarkName = "-addNight:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -21,12 +34,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Test0/stepperViewController.m"
-         timestampString = "414963895.5678"
+         timestampString = "415137961.309825"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "30"
-         endingLineNumber = "30"
-         landmarkName = "-valueChanged:"
+         startingLineNumber = "44"
+         endingLineNumber = "44"
+         landmarkName = "-addNight:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -34,26 +47,26 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Test0/stepperViewController.m"
-         timestampString = "414963895.5678"
+         timestampString = "415137961.309825"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "29"
-         endingLineNumber = "29"
-         landmarkName = "-valueChanged:"
+         startingLineNumber = "43"
+         endingLineNumber = "43"
+         landmarkName = "-addNight:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "No"
+         shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "Test0/stepperViewController.m"
-         timestampString = "414963895.5678"
+         filePath = "Test0/stepperViewController.h"
+         timestampString = "415311061.459401"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "28"
-         endingLineNumber = "28"
-         landmarkName = "-valueChanged:"
-         landmarkType = "5">
+         startingLineNumber = "11"
+         endingLineNumber = "11"
+         landmarkName = "@interface stepperViewController"
+         landmarkType = "2">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

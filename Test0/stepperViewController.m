@@ -40,12 +40,17 @@
     mainInt = 0;
     NSDate *currentTime = [NSDate date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"hh:mm:ss"];
+    [dateFormatter setDateFormat:@"HH:mm:ss"];
     NSString *time = [dateFormatter stringFromDate: currentTime];
     [timeLabel setText:time];
 }
 
 - (void) countUp {
+    NSDate *cTime = [NSDate date];
+    NSDateFormatter *dFormatter = [[NSDateFormatter alloc] init];
+    [dFormatter setDateFormat:@"HH:mm:ss"];
+    NSString *t = [dFormatter stringFromDate: cTime];
+    [timeLabel setText: t];
     mainInt += 1;
 }
 
